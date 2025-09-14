@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from "../config";
 
-// Split on blank lines into paragraphs
+// Split aboutMe into paragraphs
 const paragraphs = siteConfig.aboutMe.trim().split(/\n\s*\n/);
 ---
 
@@ -18,23 +18,13 @@ const paragraphs = siteConfig.aboutMe.trim().split(/\n\s*\n/);
         />
       </div>
 
-      <div class="lg:col-span-8 space-y-8">
-        <!-- Render each paragraph with spacing + indent -->
+      <div class="lg:col-span-8 space-y-6">
+        <!-- Loop through each paragraph -->
         {paragraphs.map((p) => (
-          <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600 indent-8">
+          <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
             {p}
           </p>
         ))}
-
-        <div class="pt-4">
-          <div class="flex flex-wrap gap-3">
-            {siteConfig.skills.map((skill) => (
-              <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-lg font-medium hover:bg-gray-200 transition-colors duration-200">
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   </div>
