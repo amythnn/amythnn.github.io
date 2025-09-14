@@ -1,92 +1,56 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
-  description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+  name: "Amy Nguyen",
+  title: "Associate Data Scientist | Georgetown MS | Penn State Alum",
+  description: "Portfolio site of Amy Nguyen",
+  accentColor: "#1d4ed8", // keep or change
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "atn30@georgetown.edu",
+    linkedin: "https://www.linkedin.com/in/amy-thn-nguyen/",
+    github: "https://github.com/amythnn",
   },
-  aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+  aboutMe: `
+    Georgetown graduate student and Penn State alum with a background in economics, business analytics, 
+    and data science. Interests in machine learning, statistical algorithms, adaptive AI governance, 
+    digital assets, credit and risk modeling, portfolio management, sports analytics, growth and 
+    international economics, and neuroscience.
+
+    Applied training in economic and behavioural theory, econometric and statistical techniques, 
+    regression analysis, classification methods, natural language processing, pre-trained and classical 
+    machine learning models, model performance evaluation, ETL processes, model deployment, version 
+    control, and object-oriented programming (OOP).
+
+    San Francisco Bay Area native passionate about college football Saturdays, March Madness, golf, 
+    Bollywood, and antiquity studies. Avid Bay Area sports fan, proud Nittany Lion, and an enthusiast 
+    of classical and modern literature.
+  `,
+  skills: [
+    "Python", "scikit-learn", "XGBoost", "spaCy",
+    "SQL", "DuckDB",
+    "Tableau", "Google Analytics",
+    "ML explainability (SHAP)",
+    "NLP", "ETL pipelines",
+    "Git/GitLab", "OOP"
+  ],
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Defense or Offense First in OT?",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      "Predicts whether starting on defense vs. offense in NFL overtime correlates with a higher win percentage. Builds features from coin toss outcomes, drive results, field position, and clock; evaluates correlation and causal signals.",
+      link: "https://github.com/amythnn/nfl-ot-start", 
+      skills: ["Python", "pandas", "scikit-learn", "XGBoost", "DuckDB", "EDA"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
-      description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+      name: "Loan Data Rate Prediction",
+      description: "Random Forest & XGBoost pipelines with SHAP analysis on LendingClub loan data.",
+      link: "https://github.com/amythnn/lendingclub-rate-ml",
+      skills: ["Python", "scikit-learn", "XGBoost"],
     },
     {
-      name: "ExtensionKit",
-      description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
-    },
-  ],
-  experience: [
-    {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
-      bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
-    },
-  ],
-  education: [
-    {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2014 - 2018",
-      achievements: [
-        "Graduated Magna Cum Laude with 3.8 GPA",
-        "Dean's List all semesters",
-        "President of Computer Science Club",
-      ],
-    },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
+      name: "Goodreads Recommender",
+      description: "User/item collaborative filtering with evaluation dashboard.",
+      link: "https://github.com/amythnn/goodreads-recsys",
+      skills: ["Python", "Recommender Systems"],
     },
   ],
 };
+
