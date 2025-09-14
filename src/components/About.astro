@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from "../config";
 
-// Split aboutMe into paragraphs
+// Split the aboutMe text into paragraphs
 const paragraphs = siteConfig.aboutMe.trim().split(/\n\s*\n/);
 ---
 
@@ -19,7 +19,6 @@ const paragraphs = siteConfig.aboutMe.trim().split(/\n\s*\n/);
       </div>
 
       <div class="lg:col-span-8 space-y-6">
-        <!-- Loop through each paragraph -->
         {paragraphs.map((p) => (
           <p class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
             {p}
