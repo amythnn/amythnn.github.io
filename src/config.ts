@@ -56,7 +56,7 @@ import { siteConfig } from "../config";
     </div>
 
     <!-- Right (headshot, nudged left) -->
-    <div class="hidden md:block shrink-0 -mr-16">
+    <div class="hidden md:block shrink-0 -mr-23">
       <img
         src="/headshot.jpeg?v=3"
         alt="Amy Nguyen headshot"
