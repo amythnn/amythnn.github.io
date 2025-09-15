@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Amy Nguyen",
+  name: "Amy",
   title: "Associate Data Scientist · Georgetown MS · Penn State BS",
-  description: "Portfolio site of Amy Nguyen",
+  description: "Portfolio site of Amy N",
   accentColor: "#60A5FA", // Light blue
 
   social: {
