@@ -1,54 +1,122 @@
-export const siteConfig = {
-  name: "Amy N.",
-  title: "Associate Data Scientist · Georgetown MS · Penn State BS",
-  description: "Portfolio site of Amy N",
-  accentColor: "#60A5FA", // Light blue
+---
+import { siteConfig } from "../config";
+---
 
-  social: {
-    email: "mailto:atn30@georgetown.edu",
-    linkedin: "https://www.linkedin.com/in/amy-thn-nguyen/",
-    github: "https://github.com/amythnn",
-  },
+<div
+  id="hero"
+  class="relative isolate overflow-hidden bg-white py-24 md:h-screen"
+  style={`--accent-color: ${siteConfig.accentColor}`}
+>
+  <!-- Gradient overlay -->
+  <div
+    class="absolute inset-0 -z-10"
+    style={`background: radial-gradient(ellipse 800px 1200px at 0% 0%, ${siteConfig.accentColor}40 0%, ${siteConfig.accentColor}25 20%, ${siteConfig.accentColor}10 40%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.8) 90%, white 100%)`}
+  ></div>
 
-  aboutMe: `
-I’ve always been drawn to patterns and storytelling, whether in sports scores, market shifts, or the quiet details of everyday life. I like to live at the intersection of ideas, between numbers and narratives, analysis and intuition. My work spans machine learning and data visualization, but I see it all as part of the same journey: uncovering how stories hide in data and how they can guide impactful decisions for people and communities.
+  <svg
+    aria-hidden="true"
+    class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+  >
+    <defs>
+      <pattern x="50%" y={-1} id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width={200} height={200} patternUnits="userSpaceOnUse">
+        <path d="M.5 200V.5H200" fill="none"></path>
+      </pattern>
+      <pattern id="programming-symbols" x="0" y="0" width="400" height="400" patternUnits="userSpaceOnUse">
+        <text x="50" y="50" fill={siteConfig.accentColor} font-family="monospace" font-size="24" transform="rotate(-15)">&lt;/&gt;</text>
+        <text x="150" y="100" fill={siteConfig.accentColor} font-family="monospace" font-size="20" transform="rotate(10)">{}</text>
+        <text x="250" y="80" fill={siteConfig.accentColor} font-family="monospace" font-size="18" transform="rotate(-5)">=&gt;</text>
+        <text x="100" y="200" fill={siteConfig.accentColor} font-family="monospace" font-size="22" transform="rotate(15)">[]</text>
+        <text x="300" y="180" fill={siteConfig.accentColor} font-family="monospace" font-size="20" transform="rotate(-10)">&lt;&gt;</text>
+        <text x="200" y="250" fill={siteConfig.accentColor} font-family="monospace" font-size="24" transform="rotate(5)">()</text>
+        <text x="50" y="320" fill={siteConfig.accentColor} font-family="monospace" font-size="18" transform="rotate(-8)">::</text>
+        <text x="350" y="300" fill={siteConfig.accentColor} font-family="monospace" font-size="22" transform="rotate(12)">==</text>
+        <text x="150" y="350" fill={siteConfig.accentColor} font-family="monospace" font-size="20" transform="rotate(-15)">++</text>
+        <text x="250" y="370" fill={siteConfig.accentColor} font-family="monospace" font-size="24" transform="rotate(8)">;</text>
+      </pattern>
+    </defs>
+    <rect fill="url(#programming-symbols)" width="100%" height="100%" opacity="0.2"></rect>
+    <rect fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" width="100%" height="100%" stroke-width={0}></rect>
+  </svg>
 
-I grew up in the Bay Area, where weekends meant cheering on my favourite teams, tossing a football with my parents, playing a quick nine, watching classic Bollywood films, or rereading The Iliad. That love of stories in sports and culture eventually led me to study at Penn State and Georgetown, where I explore how data and technology can shape finance, policy, sports, and everyday life.
+  <!-- CENTER: text left, photo right -->
+  <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center justify-between gap-8">
+    <!-- Left -->
+    <div class="max-w-2xl">
+      <h2 class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in">
+        Hello! 👋
+      </h2>
+      <h1
+        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200 whitespace-nowrap"
+      >
+        I'm <span style={{ color: siteConfig.accentColor }}>{siteConfig.name}</span>
+      </h1>
+      <p class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400">
+        {siteConfig.title}
+      </p>
+    </div>
 
-Along the way, I’ve trained in machine learning, statistical modeling, and more than my fair share of data cleaning, but I never lose sight of the human side of numbers—how they connect to people, choices, and behaviours. Outside of work, I turn to literature, Bollywood, or conversations about antiquity with the same energy I bring to a college football Saturday.
+    <!-- Right (headshot, nudged left) -->
+    <div class="hidden md:block shrink-0 -mr-16">
+      <img
+        src="/headshot.jpeg?v=3"
+        alt="Amy Nguyen headshot"
+        class="w-56 h-56 lg:w-72 lg:h-72 rounded-full object-cover shadow-xl"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+  </div>
 
-For me, curiosity ties it all together. Whether I’m building models, writing, or cheering from the stands, I’m always searching for meaning in the details and connection in the bigger picture.
+  <!-- Socials bar -->
+  <div class="absolute bottom-0 left-0 right-0 p-8 sm:p-12 md:p-24 flex gap-x-4 sm:gap-x-6 md:gap-x-8 text-gray-700 animate-fade-in animation-delay-600">
+    {
+      siteConfig.social?.email && (
+        <a
+          href={siteConfig.social.email.startsWith('mailto:') ? siteConfig.social.email : `mailto:${siteConfig.social.email}`}
+          aria-label="Email"
+          class="transition-colors duration-300 hover:text-[var(--accent-color)]"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+        </a>
+      )
+    }
+    { /* LinkedIn */ }
+    {
+      siteConfig.social?.linkedin && (
+        <a href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="transition-colors duration-300 hover:text-[var(--accent-color)]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" />
+            <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+          </svg>
+        </a>
+      )
+    }
+    { /* GitHub */ }
+    {
+      siteConfig.social?.github && (
+        <a href={siteConfig.social.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="transition-colors duration-300 hover:text-[var(--accent-color)]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+          </svg>
+        </a>
+      )
+    }
+  </div>
+</div>
 
-Fan of: Penn State Nittany Lions, Georgetown Hoyas, Golden State Warriors, Golden State Valkyries, San Francisco Giants, San Francisco 49ers, R&B and country music, Madeline Miller, em dashes, and the Oxford comma.
-`,
-
-  skills: [
-    "Python",
-    "scikit-learn",
-    "spaCy",
-    "NLP",
-    "Git/GitLab/GitHub",
-    "OOP",
-    "Tableau",
-    "Power BI",
-    "SQL",
-    "DuckDB",
-  ],
-
-projects: [
-  {
-    name: "Goodreads Recommender",
-    description:
-      "End-to-end CF recommender on Goodreads data using scikit-surprise (KNNBasic) with user- and item-based variants (cosine). Reproducible CLI pipeline: clean → train → evaluate → export. Reports RMSE, precision@k, recall@k, and writes artifacts (eda_summary.json, metrics.json, sample_recs.json).",
-    link: "https://github.com/amythnn/goodreads-recsys",
-    skills: [
-      "Python",
-      "pandas",
-      "NumPy",
-      "scikit-surprise",
-      "Recommender Systems",
-      "Data Visualization"
-    ],
-  },
-],
-};
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
+  .animation-delay-200 { animation-delay: 0.2s; }
+  .animation-delay-400 { animation-delay: 0.4s; }
+  .animation-delay-600 { animation-delay: 0.6s; }
+</style>
