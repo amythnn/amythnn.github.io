@@ -35,19 +35,19 @@ Fan of: Penn State Nittany Lions, Georgetown Hoyas, Golden State Warriors, Golde
     "DuckDB",
   ],
 
-projects: [
-  {
-    name: "Goodreads Recommender",
-    description:
-      "End-to-end recommendation system on Goodreads data. Implements user-based and item-based collaborative filtering pipelines with evaluation metrics (RMSE, precision@k, recall@k). Includes explainability through similarity scores and result visualizations.",
-    link: "https://github.com/amythnn/goodreads-recsys",
-    skills: [
-      "Python",
-      "pandas",
-      "scikit-learn",
-      "Recommender Systems",
-      "Data Visualization",
-    ],
-  },
-],
-
+  projects: [
+    {
+      name: "Goodreads Recommender",
+      description:
+        "End-to-end recommendation system on Goodreads data. Implements user-based and item-based collaborative filtering pipelines with evaluation metrics (RMSE, precision@k, recall@k). Includes explainability through similarity scores and result visualizations.",
+      link: "https://github.com/amythnn/goodreads-recsys",
+      skills: [
+        "Python",
+        "pandas",
+        "scikit-learn",
+        "Recommender Systems",
+        "Data Visualization",
+      ],
+    },
+  ],
+};
