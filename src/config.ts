@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Amy",
+  name: "Amy N.",
   title: "Associate Data Scientist · Georgetown MS · Penn State BS",
   description: "Portfolio site of Amy N",
   accentColor: "#60A5FA", // Light blue
