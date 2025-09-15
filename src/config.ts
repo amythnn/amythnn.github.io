@@ -35,27 +35,19 @@ Fan of: Penn State Nittany Lions, Georgetown Hoyas, Golden State Warriors, Golde
     "DuckDB",
   ],
 
-  projects: [
-    {
-      name: "Defense or Offense First in OT?",
-      description:
-        "Predicts whether starting on defense vs. offense in NFL overtime correlates with a higher win percentage. Builds features from coin toss outcomes, drive results, field position, and clock; evaluates correlation and causal signals.",
-      link: "https://github.com/amythnn/nfl-ot-start",
-      skills: ["Python", "pandas", "scikit-learn", "XGBoost", "DuckDB", "EDA"],
-    },
-    {
-      name: "Loan Data Rate Prediction",
-      description:
-        "Random Forest & XGBoost pipelines with SHAP analysis on LendingClub loan data.",
-      link: "https://github.com/amythnn/lendingclub-rate-ml",
-      skills: ["Python", "scikit-learn", "XGBoost"],
-    },
-    {
-      name: "Goodreads Recommender",
-      description:
-        "User/item collaborative filtering with evaluation dashboard.",
-      link: "https://github.com/amythnn/goodreads-recsys",
-      skills: ["Python", "Recommender Systems"],
-    },
-  ],
-};
+projects: [
+  {
+    name: "Goodreads Recommender",
+    description:
+      "End-to-end recommendation system on Goodreads data. Implements user-based and item-based collaborative filtering pipelines with evaluation metrics (RMSE, precision@k, recall@k). Includes explainability through similarity scores and result visualizations.",
+    link: "https://github.com/amythnn/goodreads-recsys",
+    skills: [
+      "Python",
+      "pandas",
+      "scikit-learn",
+      "Recommender Systems",
+      "Data Visualization",
+    ],
+  },
+],
+
