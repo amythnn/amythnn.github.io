@@ -38,20 +38,37 @@ Fan of: Penn State Nittany Lions, Georgetown Hoyas, Golden State Warriors, Golde
     "DuckDB",
   ],
 
-  projects: [
-    {
-      name: "Goodreads Recommender",
-      description:
-        "End-to-end CF recommender on Goodreads data using scikit-surprise (KNNBasic) with user- and item-based variants (cosine). Reproducible CLI pipeline: clean → train → evaluate → export. Reports RMSE, precision@k, recall@k, and writes artifacts (eda_summary.json, metrics.json, sample_recs.json).",
-      link: "https://github.com/amythnn/goodreads-recsys",
-      skills: [
-        "Python",
-        "pandas",
-        "NumPy",
-        "scikit-surprise",
-        "Recommender Systems",
-        "Data Visualization",
-      ],
-    },
-  ],
+projects: [
+  {
+    name: "Saturdays to Sundays (NCAA to NFL Pipeline)",
+    description:
+      "Scrapes Wikipedia NFL Draft pages for a given year, cleans & normalizes pick tables, filters by conference (e.g. Big Ten and SEC), and builds an interactive Sankey diagram (one link per player) showing college to NFL team flows. Exposes a CLI to choose year/conferences and writes tidy CSV + HTML (Plotly) artifacts.",
+    link: "https://github.com/amythnn/ncaa-to-nfl-pipeline",
+    skills: [
+      "Python",
+      "pandas",
+      "requests",
+      "BeautifulSoup (bs4)",
+      "lxml/html5lib",
+      "Plotly",
+      "Data Visualization",
+      "Web Scraping",
+      "CLI"
+    ],
+  },
+  {
+    name: "Goodreads Recommender",
+    description:
+      "End-to-end CF recommender on Goodreads data using scikit-surprise (KNNBasic) with user- and item-based variants (cosine). Reproducible CLI pipeline: clean → train → evaluate → export. Reports RMSE, precision@k, recall@k, and writes artifacts (eda_summary.json, metrics.json, sample_recs.json).",
+    link: "https://github.com/amythnn/goodreads-recsys",
+    skills: [
+      "Python",
+      "pandas",
+      "NumPy",
+      "scikit-surprise",
+      "Recommender Systems",
+      "Data Visualization",
+    ],
+  },
+],
 } as const;
