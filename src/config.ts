@@ -42,7 +42,7 @@ projects: [
   {
     name: "Saturdays to Sundays (NCAA to NFL Pipeline)",
     description:
-      "Scrapes Wikipedia NFL Draft pages for a given year, cleans & normalizes pick tables, filters by conference (e.g. Big Ten and SEC), and builds an interactive Sankey diagram (one link per player) showing college to NFL team flows. Exposes a CLI to choose year/conferences and writes tidy CSV + HTML (Plotly) artifacts.",
+      "Scrapes Wikipedia NFL Draft pages for a given year, cleans & normalizes pick tables, filters by conference (e.g. Big Ten and SEC), and builds an interactive Sankey diagram (one link per player) showing college to NFL team flows. The Sankey visualization is viewable directly through the deployed project page, and the GitHub repo provides full source code plus instructions to navigate by year/conference.",
     link: "https://amythnn.github.io/ncaa_nfl_pipeline",
     skills: [
       "Python",
