@@ -1,7 +1,7 @@
 // src/config.ts
 export const siteConfig = {
   name: "Amy N.",
-  title: "Scholar and Data Science Practitioner with Interests in Technology, Policy, & Ethics\nDuke Graduate Student · Georgetown & Penn State Alum",
+  title: "Duke Graduate Student · Georgetown & Penn State Alum\nScholar and Data Science Practitioner with Interests in Technology, Policy, & Ethics",
   description: "Portfolio site of Amy N.",
   accentColor: "#60A5FA",
 
