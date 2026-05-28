@@ -12,15 +12,13 @@ export const siteConfig = {
   },
 
   aboutMe: `
-I’ve always been drawn to patterns and storytelling, whether in sports scores, market shifts, or the quiet details of everyday life. I like to live at the intersection of ideas, between numbers and narratives, analysis and intuition. My work spans machine learning and data visualization, but I see it all as part of the same journey: uncovering how stories hide in data and how they can guide impactful decisions for people and communities.
+My interests and work converge at the intersection of technology, governance, and human behaviour. At its core, I’m interested in how data and systems shape the way people make decisions, build trust, and navigate the world around them.
 
-I grew up in the Bay Area, where weekends meant cheering on my favourite teams, tossing a football with my parents, playing a quick nine, watching classic Bollywood films, or rereading The Iliad. That love of stories in sports and culture eventually led me to study at Penn State and Georgetown, where I explore how data and technology can shape finance, policy, sports, and everyday life.
+Outside of work, I enjoy reading, writing, watching sports, collecting jerseys and Pokémon cards, and exploring different languages and cultures through travel, food, and media.
 
-Along the way, I’ve trained in machine learning, statistical modeling, and more than my fair share of data cleaning, but I never lose sight of the human side of numbers—how they connect to people, choices, and behaviours. Outside of work, I turn to literature, Bollywood, or conversations about antiquity with the same energy I bring to a college football Saturday.
+Languages (a continuous work in progress): English, German, Hindi, and Vietnamese.
 
-For me, curiosity ties it all together. Whether I’m building models, writing, or cheering from the stands, I’m always searching for meaning in the details and connection in the bigger picture.
-
-Fan of: Penn State Nittany Lions, Georgetown Hoyas, Golden State Warriors, Golden State Valkyries, San Francisco Giants, San Francisco 49ers, R&B and country music, Madeline Miller, em dashes, and the Oxford comma.
+Fan of: Penn State Nittany Lions, Georgetown Hoyas, Duke Blue Devils, Golden State Warriors, Golden State Valkyries, San Francisco Giants, San Francisco 49ers, R&B and country music, Bollywood, classic literature (especially Virginia Woolf), em dashes, and the Oxford comma.
 `,
 
   skills: [
