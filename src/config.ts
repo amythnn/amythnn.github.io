@@ -40,24 +40,39 @@ projects: [
   {
     name: "Saturdays to Sundays (NCAA to NFL Pipeline)",
     description:
-      "Scrapes Wikipedia NFL Draft pages for a given year, cleans & normalizes pick tables, filters by conference (e.g. Big Ten and SEC), and builds an interactive Sankey diagram (one link per player) showing college to NFL team flows. The Sankey visualization is viewable directly through the deployed project page, and the GitHub repo provides full source code plus instructions to navigate by year/conference.",
+      "Scrapes Wikipedia NFL Draft pages for a given year, cleans and normalizes draft data, filters by conference (e.g., Big Ten and SEC), and builds interactive Plotly Sankey diagrams that visualize player pathways from college football programs to NFL teams. Includes automated data collection, preprocessing, aggregation, and exportable HTML visualizations with player-level hover details.",
     link: "https://amythnn.github.io/ncaa_nfl_pipeline",
     skills: [
       "Python",
       "pandas",
       "requests",
       "BeautifulSoup (bs4)",
-      "lxml/html5lib",
       "Plotly",
       "Data Visualization",
       "Web Scraping",
-      "CLI"
+      "Data Engineering",
+    ],
+  },
+  {
+    name: "FinTech Legislative Text Analytics",
+    description:
+      "Uses the LegiScan API to collect, process, and analyze U.S. state legislation related to financial technology, consumer finance, digital payments, lending, and financial regulation. The project automates bill collection, metadata extraction, and text analysis to support policy research and identify emerging regulatory trends across jurisdictions.",
+    link: "https://github.com/amythnn/fintech_legislative_text_analytics",
+    skills: [
+      "Python",
+      "LegiScan API",
+      "NLP",
+      "Text Analytics",
+      "Policy Analytics",
+      "Data Collection",
+      "Financial Regulation",
+      "Legislative Research",
     ],
   },
   {
     name: "Goodreads Recommender",
     description:
-      "End-to-end CF recommender on Goodreads data using scikit-surprise (KNNBasic) with user- and item-based variants (cosine). Reproducible CLI pipeline: clean → train → evaluate → export. Reports RMSE, precision@k, recall@k, and writes artifacts (eda_summary.json, metrics.json, sample_recs.json).",
+      "End-to-end collaborative filtering recommender system built on Goodreads data using scikit-surprise (KNNBasic) with both user-based and item-based approaches. Includes a reproducible CLI pipeline for data cleaning, model training, evaluation, and recommendation export, with RMSE, precision@k, and recall@k performance reporting.",
     link: "https://github.com/amythnn/goodreads-recsys",
     skills: [
       "Python",
@@ -65,8 +80,10 @@ projects: [
       "NumPy",
       "scikit-surprise",
       "Recommender Systems",
+      "Machine Learning",
       "Data Visualization",
     ],
   },
+],
 ],
 } as const;
