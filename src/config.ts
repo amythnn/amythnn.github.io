@@ -44,7 +44,6 @@ projects: [
         "Data Visualization",
         "Web Scraping",
         "Python",
-        "BeautifulSoup",
         "Plotly",
     ],
   },
