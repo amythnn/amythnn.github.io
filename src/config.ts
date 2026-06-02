@@ -12,7 +12,7 @@ export const siteConfig = {
   },
 
   aboutMe: `
-My interests and work converge at the intersection of technology, governance, and human behaviour. At its core, I’m interested in how data and systems shape the way people make decisions, build trust, and navigate the world around them.
+My interests and work converge at the intersection of technology, governance, and human behaviour. I am particularly interested in how data and systems shape the way people make decisions, build trust, and navigate the world around them.
 
 Outside of work, I enjoy reading, writing, watching sports, collecting jerseys and Pokémon cards, and exploring different languages and cultures through travel, food, and media.
 
@@ -21,21 +21,6 @@ Languages (a continuous work in progress): English, German, Hindi, and Vietnames
 Fan of: Penn State Nittany Lions, Georgetown Hoyas, Duke Blue Devils, Golden State Warriors, Golden State Valkyries, San Francisco Giants, San Francisco 49ers, R&B and country music, Bollywood, classic literature (especially Virginia Woolf), em dashes, and the Oxford comma.
 `,
 
-  skills: [
-    "Python",
-    "scikit-surprise",
-    "pandas",
-    "NumPy",
-    "NLP",
-    "spaCy",
-    "Git/GitLab/GitHub",
-    "OOP",
-    "Tableau",
-    "Power BI",
-    "SQL",
-    "DuckDB",
-  ],
-
 projects: [
   {
     name: "Saturdays to Sundays (NCAA to NFL Pipeline)",
@@ -43,14 +28,13 @@ projects: [
       "Scrapes Wikipedia NFL Draft pages for a given year, cleans and normalizes draft data, filters by conference (e.g., Big Ten and SEC), and builds interactive Plotly Sankey diagrams that visualize player pathways from college football programs to NFL teams. Includes automated data collection, preprocessing, aggregation, and exportable HTML visualizations with player-level hover details.",
     link: "https://amythnn.github.io/ncaa_nfl_pipeline",
     skills: [
-      "Python",
-      "pandas",
-      "requests",
-      "BeautifulSoup (bs4)",
-      "Plotly",
-      "Data Visualization",
-      "Web Scraping",
-      "Data Engineering",
+        "Python",
+        "pandas",
+        "Web Scraping",
+        "BeautifulSoup",
+        "Plotly",
+        "Data Visualization",
+        "Data Engineering",
     ],
   },
   {
@@ -64,9 +48,8 @@ projects: [
       "NLP",
       "Text Analytics",
       "Policy Analytics",
-      "Data Collection",
       "Financial Regulation",
-      "Legislative Research",
+      "Data Collection",
     ],
   },
   {
@@ -81,7 +64,7 @@ projects: [
       "scikit-surprise",
       "Recommender Systems",
       "Machine Learning",
-      "Data Visualization",
+      "Model Evaluation",
     ],
   },
 ],
