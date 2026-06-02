@@ -12,7 +12,9 @@ export const siteConfig = {
   },
 
   aboutMe: `
-My interests and work converge at the intersection of technology, governance, and human behaviour. I am particularly interested in how data and systems shape the way people make decisions, build trust, and navigate the world around them.
+Duke graduate student with a background in data science and economics; Georgetown and Penn State alum.
+
+My interests and work converge at the intersection of technology, governance, and human behaviour, with a particular focus on how data and systems shape the way people make decisions, build trust, and navigate the world around them.
 
 Outside of work, I enjoy reading, writing, watching sports, collecting jerseys and Pokémon cards, and exploring different languages and cultures through travel, food, and media.
 
@@ -20,6 +22,15 @@ Languages (a continuous work in progress): English, German, Hindi, and Vietnames
 
 Fan of: Penn State Nittany Lions, Georgetown Hoyas, Duke Blue Devils, Golden State Warriors, Golden State Valkyries, San Francisco Giants, San Francisco 49ers, R&B and country music, Bollywood, classic literature (especially Virginia Woolf), em dashes, and the Oxford comma.
 `,
+  
+skills: [
+  "Data Science & Analytics",
+  "Machine Learning",
+  "Financial Technology",
+  "Policy Analysis",
+  "Economics",
+  "Statistics",
+],
 
 projects: [
   {
