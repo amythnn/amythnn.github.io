@@ -85,5 +85,4 @@ projects: [
     ],
   },
 ],
-],
 } as const;
