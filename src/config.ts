@@ -60,18 +60,5 @@ projects: [
         "APIs",
     ],
   },
-  {
-    name: "Goodreads Recommender",
-    description:
-      "End-to-end collaborative filtering recommender system built on Goodreads data using scikit-surprise (KNNBasic) with both user-based and item-based approaches. Includes a reproducible CLI pipeline for data cleaning, model training, evaluation, and recommendation export, with RMSE, precision@k, and recall@k performance reporting.",
-    link: "https://github.com/amythnn/goodreads-recsys",
-    skills: [
-      "Machine Learning",
-      "Recommender Systems",
-      "Model Evaluation",
-      "Python",
-      "scikit-surprise",
-    ],
-  },
 ],
 } as const;
